@@ -1,0 +1,46 @@
+:root {
+  --primary-bg: #FAFAFA;
+  --secondry-bg: #E26414;
+  --header-bg: rgba(244, 244, 244, 0.6);
+}
+
+.header-bg {
+  background: var(--header-bg);
+  padding: 30px 0;
+}
+.header-bg .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--card-bg);
+  font-size: 14px;
+  line-height: 29px;
+  font-weight: 400;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}

@@ -1,0 +1,85 @@
+.header-bg{
+    background: var(--header-bg);
+    padding: 20px 0;
+    position: fixed;
+    width: $width100;
+    z-index: 999;
+    .header{
+        @extend .display-flex;
+        nav{
+            ul{
+                @extend .display-flex;
+            }
+            li{
+                font-size: $font-size16;
+                margin: 0 20px;
+                position: relative;
+            }
+            .new-tag{
+                font-size: $font-size10;
+                color: var(--default-bg);
+                background: var(--primary-tag-bg);
+                padding: 0 5px;
+                position: absolute;
+                top: -20px;
+                left: 50px;
+            }
+            .sale-tag{
+                background: var(--sale-tag-bg);
+            }
+            li a {
+                   color: var(--default-txt);
+                padding-bottom: 42px;
+              }
+              ul > li {
+                margin: 0 30px 0 0;
+                text-transform: capitalize;
+                line-height: 20px;
+                position: relative;
+              }
+              ul > li:hover > a {
+                color: var(--secondry-bg);
+                transition: $transition5;
+              }
+              li ul {
+                position: absolute;
+                left: 0;
+                top: 54px;
+                background: var(--secondry-border);
+                width: 180px;
+                display: none;
+                z-index: 999;
+                border-bottom: 3px solid var(--default-txt);
+              }
+              li ul li {
+                font-size: $font-size16;
+                color: var(--default-txt);
+                border-bottom: 1px solid var(--default-bg);
+                margin-right: 0;
+            }
+            li ul li:last-child {
+                border-bottom: 0;
+            }
+            li ul li a {
+                padding: 10px;
+                color: var(--default-txt);
+                display: block;
+              }
+              li ul li a:hover {
+                background: var(--secondry-bg);
+                transition: $transition5;
+                color: var(--default-bg);
+              }
+              ul li:hover ul {
+                display: block;
+              }
+            li:nth-child(6){
+                margin-right: 200px;
+            }
+            li:nth-child(n+7){
+                margin: 0 10px;
+            }
+        }
+
+    }
+}

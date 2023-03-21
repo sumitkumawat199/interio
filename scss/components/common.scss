@@ -1,0 +1,63 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--card-bg);
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: 400;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  // common
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+  .container {
+    width: 1280px;
+    margin: auto;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+.display-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.justify-content-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-colomn{
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+h1{
+  font-size: $font-size54;
+  font-weight: 500;
+}
+h2{
+  font-size: $font-size36;
+  font-weight: 500;
+  color: var(--default-heading-text);
+}
+p{
+  font-size: $font-size16;
+}

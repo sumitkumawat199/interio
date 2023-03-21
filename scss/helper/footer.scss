@@ -1,0 +1,110 @@
+footer {
+  margin-top: 50px;
+  @extend .display-flex;
+  h4 {
+    font-size: $font-size20;
+  }
+  .details {
+    width: 21%;
+    p {
+      color: var(--primary-tag-bg);
+      margin: 20px 0;
+    }
+    ul {
+      // @extend .display-flex;
+      display: flex;
+    }
+    li {
+      background: #3b5999;
+      width: 40px;
+      height: 40px;
+      border-radius: $border-radius50;
+      margin-left: 5px;
+      img {
+        margin: 8px;
+      }
+      &:first-child{
+        margin: 0;
+      }
+      &:nth-child(2) {
+        background: #cc2366;
+      }
+      &:nth-child(3) {
+        background: #000;
+      }
+      &:nth-child(4) {
+        background: #ffb800;
+      }
+      &:last-child {
+        background: #00aced;
+      }
+    }
+    & li:hover{
+      opacity: 0.8;
+    }
+  }
+  .footer-links {
+    a {
+      font-size: $font-size16;
+      color: var(--primary-tag-bg);
+      transition: $transition5;
+      &:hover{
+        color: var(--secondry-bg);
+      }
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  .contact-us {
+    li {
+      margin: 30px 0;
+      h4 {
+        font-size: $font-size20;
+      }
+      p{
+        color: var(--primary-tag-bg)
+      }
+      a{
+        font-size: $font-size16;
+        color: var(--primary-tag-bg)      
+      }
+    }
+    .contact-us-details {
+      @extend .flex;
+      .contact-us-image {
+        background: var(--secondry-bg);
+        width: 50px;
+        height: 50px;
+        border-radius: $border-radius50;
+        margin-right: 20px;
+      }
+      img {
+        margin: 9px;
+      }
+      .contact-detail {
+        @extend .flex-colomn;
+      }
+    }
+  }
+}
+.copyright-bg{
+    background: var(--default-heading-text);
+    padding: 10px 0;
+    .copyright{
+        @extend .display-flex;
+        ul{
+          @extend .flex;
+        }
+        li{
+          margin-left: 5px;
+        }
+        p{
+            color: var(--default-bg);
+            line-height: 10px;
+        }
+        img{
+            display: inline-block;
+        }
+    }
+}
